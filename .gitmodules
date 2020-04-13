@@ -1,0 +1,6 @@
+[submodule "lib/FloatX"]
+	path = lib/FloatX
+	url = git@github.com:oprecomp/FloatX
+[submodule "lib/eigen"]
+	path = lib/eigen
+	url = https://gitlab.com/libeigen/eigen
