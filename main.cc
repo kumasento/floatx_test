@@ -2,14 +2,15 @@
 #include <floatx.hpp>
 #include <Eigen/Core>
 
+typedef flx::floatx<5, 5, float> msfp11;
+
+// https://eli.thegreenplace.net/2014/sfinae-and-enable_if/
 int main(int argc, char *argv[]) {
-  typedef Eigen::Matrix<flx::floatx<4, 5>, 4, 4> Mat;
+
+  typedef Eigen::Matrix<msfp11, 4, 4> Mat;
 
   Mat A, B, C;
-  A(0, 0) = 1.23;
-  C = A + B;
-
-  std::cout << C(0, 0) << std::endl;
+  C = A * B;
 
   return 0;
 }
