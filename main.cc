@@ -2,6 +2,7 @@
 #include <chrono>
 #include <floatx.hpp>
 #include <Eigen/Core>
+#include <Float.hpp>
 
 typedef flx::floatx<5, 5, float> msfp11;
 
